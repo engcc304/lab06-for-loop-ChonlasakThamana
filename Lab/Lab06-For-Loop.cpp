@@ -22,12 +22,14 @@ int main() {
     printf("Enter a number: ");
     scanf("%d", &n);
 
-    if (n % 2 == 0) {
-        printf("%d 1 3 5 7 9 11", n);
-    } else {
-        printf("%d 8 6 4 2 0", n);
+    printf("Even numbers from 1 to %d:\n", n);
+
+    int i;
+    for (i = 1; i <= n; i++) {
+        if (i % 2 == 0) {
+            printf("%d, ", i);
+        }
     }
-    
     //--| YOUR CODE HERE
 
     return 0 ;
