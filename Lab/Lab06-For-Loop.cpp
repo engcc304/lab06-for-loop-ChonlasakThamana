@@ -18,7 +18,16 @@
 #include <stdio.h>
 
 int main() {
+    int n;
+    printf("Enter a number: ");
+    scanf("%d", &n);
 
+    if (n % 2 == 0) {
+        printf("%d 1 3 5 7 9 11", n);
+    } else {
+        printf("%d 8 6 4 2 0", n);
+    }
+    
     //--| YOUR CODE HERE
 
     return 0 ;
