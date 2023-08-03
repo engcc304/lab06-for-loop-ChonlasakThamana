@@ -16,22 +16,27 @@
         Series: 8 6 4 2 0
 */
 #include <stdio.h>
+int main(){
 
-int main()
-{
-    int n;
-    printf("Enter a number: ");
-    scanf("%d", &n);
 
-    printf("Even numbers from 1 to %d:\n", n);
-
-    int i;
-    for (i = 1; i <= n; i++) {
-        if (i % 2 == 0) {
-            printf("%d, ", i);
+    int N,i;
+    printf("Enter Value: ");
+    scanf("%d", &N);
+    if(N%2==1){
+        printf("Series:");
+        for ( i = 1; N >= i; i+=2)
+        {
+        printf("%d " ,i);
         }
+        
     }
-
-    return 0;
+else{
+    printf("Series:");
+    for ( i = N; i >= 0; i-=2){
+        printf("%d ",i);
+    }
 }
-//end main function
+    //--| YOUR CODE HERE
+
+    return 0 ;
+}//end main function
