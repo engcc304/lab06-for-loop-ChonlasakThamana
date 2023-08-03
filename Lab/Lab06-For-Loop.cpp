@@ -18,17 +18,18 @@
 #include <stdio.h>
 
 int main() {
-    int n;
-    printf("Enter a number: ");
-    scanf("%d", &n);
+    printf("MarcusCode's Chess Table\n");
 
-    printf("Even numbers from 1 to %d:\n", n);
-
-    int i;
-    for (i = 1; i <= n; i++) {
-        if (i % 2 == 0) {
-            printf("%d, ", i);
+    int i, j;
+    for (i = 0; i < 8; i++) {
+        for (j = 0; j < 8; j++) {
+            if ((i + j) % 2 == 0) {
+                printf("#");
+            } else {
+                printf(" ");
+            }
         }
+        printf("\n");
     }
     //--| YOUR CODE HERE
 
