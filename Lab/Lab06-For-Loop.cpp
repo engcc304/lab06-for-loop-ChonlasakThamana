@@ -33,7 +33,5 @@ else{
         printf("%d ",i);
     }
 }
-    //--| YOUR CODE HERE
-
     return 0 ;
 }//end main function
