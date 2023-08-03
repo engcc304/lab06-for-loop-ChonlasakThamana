@@ -17,21 +17,21 @@
 */
 #include <stdio.h>
 
-int main() {
-    printf("MarcusCode's Chess Table\n");
+int main()
+{
+    int n;
+    printf("Enter a number: ");
+    scanf("%d", &n);
 
-    int i, j;
-    for (i = 0; i < 8; i++) {
-        for (j = 0; j < 8; j++) {
-            if ((i + j) % 2 == 0) {
-                printf("#");
-            } else {
-                printf(" ");
-            }
+    printf("Even numbers from 1 to %d:\n", n);
+
+    int i;
+    for (i = 1; i <= n; i++) {
+        if (i % 2 == 0) {
+            printf("%d, ", i);
         }
-        printf("\n");
     }
-    //--| YOUR CODE HERE
 
-    return 0 ;
-}//end main function
+    return 0;
+}
+//end main function
